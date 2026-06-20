@@ -1,0 +1,107 @@
+.contactSection {
+  border-top: 1px solid var(--border);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  align-items: start;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.introText {
+  color: var(--text-secondary);
+  margin-bottom: 28px;
+  line-height: 1.8;
+}
+
+.socialsGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-secondary);
+  font-size: 14px;
+  transition: color 0.2s ease;
+}
+
+.socialLink:hover {
+  color: var(--text-primary);
+}
+
+.socialIndicator {
+  font-family: var(--mono);
+  color: var(--accent);
+}
+
+/* Form Styles */
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.inputField,
+.textArea {
+  width: 100%;
+  padding: 10px 14px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  color: var(--text-primary);
+  font-size: 14px;
+  font-family: var(--sans);
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.inputField:focus,
+.textArea:focus {
+  border-color: var(--accent);
+}
+
+.textArea {
+  resize: vertical;
+}
+
+.sendBtn {
+  padding: 11px 24px;
+  background: var(--accent);
+  color: #0f0f0f;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: opacity 0.2s ease;
+}
+
+.sendBtn:hover {
+  opacity: 0.85;
+}
+
+.successBox {
+  background: var(--accent-dim);
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  padding: 20px 24px;
+  text-align: center;
+}
+
+.successText {
+  font-family: var(--mono);
+  color: var(--accent);
+  font-size: 14px;
+}
