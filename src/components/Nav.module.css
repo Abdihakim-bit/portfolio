@@ -125,3 +125,9 @@
     display: flex !important;
   }
 }
+
+@media (min-width: 601px) {
+  .mobileMenu {
+    display: none !important;
+  }
+}
