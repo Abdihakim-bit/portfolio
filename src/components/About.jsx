@@ -68,10 +68,7 @@ export default function About() {
                   {section.images.map((img, imgIdx) => (
                     <div key={imgIdx} className={styles.cardFrame}>
                       <div className={styles.imageAspectBox}>
-                        <img 
-                          src={img.src} 
-                          alt={img.alt} 
-                          className={styles.galleryImage} 
+                        <img src={img.src} alt={img.alt} className={styles.galleryImage} 
                         />
                       </div>
                     </div>
