@@ -1,0 +1,117 @@
+.aboutSection {
+  border-top: 1px solid var(--border);
+  padding: 40px 0;
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 48px;
+  margin-bottom: 40px;
+}
+
+.bioText {
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+  line-height: 1.8;
+}
+
+.bioTextLast {
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.terminalCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 20px 24px;
+  font-family: var(--mono);
+  font-size: 13px;
+}
+
+.terminalCommand {
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+.terminalOutputCmd {
+  color: var(--text-muted);
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.terminalAccent {
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+.terminalBody {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.galleryContainer {
+  margin-top: 32px;
+}
+
+.gallerySectionLabel {
+  font-size: 13px;
+  font-family: var(--mono);
+  color: var(--text-muted);
+  margin-bottom: 24px;
+  font-weight: 500;
+}
+
+.galleryCategoryGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.categoryTitle {
+  font-size: 12px;
+  font-family: var(--mono);
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+
+.imageGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.cardFrame {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.cardFrame:hover {
+  transform: translateY(-4px);
+  border-color: var(--text-muted);
+}
+
+.imageAspectBox {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--bg-surface);
+}
+
+.galleryImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .mainGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
