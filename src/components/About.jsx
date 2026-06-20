@@ -6,16 +6,16 @@ export default function About() {
     {
       category: 'Milestones & Expeditions',
       images: [
-        { src: '/images/Graduation.JPEG', alt: 'Graduation celebration' },
-        { src: '/images/Desert.JPG', alt: 'Desert landscape travel snapshot' },
-        { src: '/images/ChineseName.JPEG', alt: '方天瑞' }
+        { src: 'https://res.cloudinary.com/doprdhnvp/image/upload/q_auto/f_auto/v1781993376/Graduation_kvywvv.png', alt: 'Graduation celebration' },
+        { src: 'https://res.cloudinary.com/doprdhnvp/image/upload/q_auto/f_auto/v1781992586/Desert_cm5vwc.jpg', alt: 'Desert landscape travel snapshot' },
+        { src: 'https://res.cloudinary.com/doprdhnvp/image/upload/q_auto/f_auto/v1781992584/ChineseName_esdev2.jpg', alt: '方天瑞' }
       ]
     },
     {
       category: 'Cultural Immersion',
       images: [
-        { src: '/images/Giraffe.jpg', alt: 'Giraffe Feeding' },
-        { src: '/images/Maasai.jpg', alt: 'Cultural and language exploration' }
+        { src: 'https://res.cloudinary.com/doprdhnvp/image/upload/q_auto/f_auto/v1781992587/Giraffe_twjqsw.jpg', alt: 'Giraffe Feeding' },
+        { src: 'https://res.cloudinary.com/doprdhnvp/image/upload/q_auto/f_auto/v1781992588/Maasai_wzutr3.jpg', alt: 'Cultural and language exploration' }
       ]
     }
   ];
