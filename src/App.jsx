@@ -6,6 +6,7 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 
 const YOUR_NAME = 'Abdihakim Ali';
 
@@ -20,6 +21,7 @@ export default function App() {
           <Skills />
           <Contact />
       </main>
+      <Footer name={YOUR_NAME} />
     </>
   );
 }
