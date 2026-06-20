@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import styles from './Contact.module.css';
 
-const YOUR_EMAIL = 'alabdihakim8@gmail.com';
+const YOUR_EMAIL = 'abdihakimbit@gmail.com';
 const YOUR_GITHUB = 'https://github.com/Abdihakim-bit';
 const YOUR_LINKEDIN = 'https://www.linkedin.com/in/abdihakim-ali/';
 

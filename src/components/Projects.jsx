@@ -50,13 +50,12 @@ function ProjectCard({ project }) {
             typeof project.github === 'object' ? (
               <div className={styles.splitLinksBox}>
                 <a  href={project.github.frontend}  target="_blank"  rel="noreferrer" className={styles.splitLink}>
-                  frontend
+                  frontend ↗
                 </a>
                 <span className={styles.divider}>|</span>
                 <a href={project.github.backend} target="_blank" rel="noreferrer" className={styles.splitLink}>
-                  backend
+                  backend ↗
                 </a>
-                <span>↗</span>
               </div>
             ) : (
               <a href={project.github} target="_blank" rel="noreferrer" className={styles.monoLink}>
