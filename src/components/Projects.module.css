@@ -1,0 +1,115 @@
+.projectsSection {
+  border-top: 1px solid var(--border);
+  padding: 40px 0;
+}
+
+.cardList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 24px 28px;
+  transition: border-color 0.2s ease;
+}
+
+.card:hover {
+  border-color: var(--text-muted);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+.badge {
+  font-size: 11px;
+  font-family: var(--mono);
+  font-weight: 500;
+  padding: 3px 10px;
+  border-radius: 4px;
+  letter-spacing: 0.06em;
+}
+
+.linksGroup {
+  display: flex;
+  gap: 12px;
+}
+
+.splitLinksBox {
+  display: flex;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text-muted);
+  font-family: var(--mono);
+}
+
+.splitLink {
+  color: inherit;
+  transition: color 0.2s ease;
+}
+
+.splitLink:hover {
+  color: var(--text-primary);
+}
+
+.divider {
+  color: var(--border);
+}
+
+.monoLink {
+  font-size: 12px;
+  font-family: var(--mono);
+  transition: color 0.2s ease;
+  color: var(--text-muted);
+}
+
+.monoLink:hover {
+  color: var(--text-primary);
+}
+
+.accentLink {
+  font-size: 12px;
+  color: var(--accent);
+  font-family: var(--mono);
+  transition: opacity 0.2s ease;
+}
+
+.accentLink:hover {
+  opacity: 0.7;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.description {
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.techContainer {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.techTag {
+  font-size: 11px;
+  font-family: var(--mono);
+  color: var(--text-muted);
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  padding: 3px 8px;
+  border-radius: 4px;
+}
