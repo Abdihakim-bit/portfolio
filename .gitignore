@@ -12,6 +12,14 @@ dist
 dist-ssr
 *.local
 
+.env
+
+.eslintrc.cache
+.vite
+
+desktop.ini
+Thumbs.db
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
