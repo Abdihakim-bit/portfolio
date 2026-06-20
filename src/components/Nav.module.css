@@ -1,0 +1,127 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 18px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.navbarScrolledOrOpen {
+  background: rgba(15, 15, 15, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+}
+
+.brandLink {
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  z-index: 101;
+}
+
+.brandLink:hover {
+  opacity: 0.75;
+}
+
+.brandText {
+  font-family: var(--mono);
+  font-size: 14px;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+.desktopLinks {
+  display: flex;
+  gap: 28;
+}
+
+.desktopLink {
+  vertical-align: middle;
+  font-size: 13px;
+  color: var(--text-secondary);
+  transition: color 0.2s;
+}
+
+.desktopLink:hover {
+  color: var(--text-primary);
+}
+
+.hamburgerBtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  z-index: 101;
+  width: 28px;
+  height: 28px;
+}
+
+.hamburgerLine {
+  width: 20px;
+  height: 2px;
+  background: var(--text-primary);
+  transition: all 0.2s ease;
+  transform-origin: center;
+}
+
+.mobileMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--bg);
+  opacity: 0;
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  transition: all 0.3s ease;
+  transform: translateY(-100%);
+  pointer-events: none;
+}
+
+.mobileMenuOpen {
+  opacity: 0.98;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.mobileLink {
+  font-size: 18px;
+  font-family: var(--mono);
+  color: var(--text-secondary);
+  transition: color 0.2s;
+}
+
+.mobileLink:hover {
+  color: var(--accent);
+}
+
+.hamburgerBtn {
+  display: none !important;
+}
+
+@media (max-width: 600px) {
+  .desktopLinks {
+    display: none !important;
+  }
+
+  .hamburgerBtn {
+    display: flex !important;
+  }
+}
