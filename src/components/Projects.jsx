@@ -3,6 +3,17 @@ import styles from './Projects.module.css';
 
 const projects = [
   {
+    title: 'ObserIQ Portal Backend Infrastructure',
+    tag: 'Client work',
+    tagColor: 'var(--accent)',
+    tagBg: 'var(--accent-dim)',
+    description:
+      'Built the backend behind ObserIQ\'s client portal, including server-side scoring and PDF generation for diagnostic reports. Integrated with the existing frontend for a seamless user experience, and added SVG/PDF asset generation with embedded QR codes that route to a dedicated backend endpoint.',
+    tech: ['PostgreSQL', 'Flask', 'RESTful API', 'Docker'],
+    link: 'https://obseriq.org',
+    github: null, 
+  },
+  {
     title: 'Metra Sign Official Website',
     tag: 'Client work',
     tagColor: 'var(--accent)',
@@ -16,8 +27,8 @@ const projects = [
   {
     title: 'Web-Based Image Sharing Platform',
     tag: 'Academic',
-    tagColor: '#eab308', 
-    tagBg: 'rgba(234,179,8,0.1)',
+    tagColor: 'var(--accent-edu)',
+    tagBg: 'var(--accent-dim-edu)',
     description:
       'Built a secure, client-server photo-sharing web application utilizing a layered architecture. Implemented robust API authentication utilizing the Auth0 PKCE flow and JWT verification alongside automated Docker containerization to pass rigorous load and stress performance testing.',
     tech: ['React', 'Python', 'Flask', 'SQLite', 'Auth0', 'JWT', 'Docker Compose'],
@@ -27,8 +38,8 @@ const projects = [
   {
     title: 'Airline Fuel Management System',
     tag: 'Academic',
-    tagColor: '#eab308',
-    tagBg: 'rgba(234,179,8,0.1)',
+    tagColor: 'var(--accent-edu)',
+    tagBg: 'var(--accent-dim-edu)',
     description:
       'Engineered a highly optimized, parallel multi-threaded server application to process real-time aircraft telemetry data. Designed to handle concurrent streams from over 4,000 parallel clients, maintaining database integrity and recalculating flight fuel consumption metrics seamlessly even during abrupt network dropouts.',
     tech: ['C++', 'Multithreading', 'TCP/IP Sockets', 'Network Programming', 'Thread Pools'],

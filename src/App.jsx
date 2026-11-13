@@ -9,20 +9,20 @@ import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
-const YOUR_NAME = 'Abdihakim Ali';
+const NAME = 'Abdihakim Ali';
 
 export default function App() {
   return (
     <>
-      <Nav name={YOUR_NAME} />
+      <Nav name={NAME} />
       <main>  
-          <Hero name={YOUR_NAME} />
+          <Hero name={NAME} />
           <About />
           <Projects />
           <Skills />
           <Contact />
       </main>
-      <Footer name={YOUR_NAME} />
+      <Footer name={NAME} />
       <Analytics />
     </>
   );
